@@ -8,7 +8,7 @@ jobs:
   comment-with-action: 
     runs-on: ubuntu-latest
     steps:
-    - name: "dump github contect"
+    - name: "dump github context"
       run: echo '${{ toJSON(github.event) }}' |jq
       shell: bash
     - name: Create comment
@@ -22,4 +22,3 @@ jobs:
 
           [1]: https://github.com/peter-evans/create-or-update-comment
         reactions: '+1'
-      
